@@ -36,6 +36,7 @@
 					<th>No Handphone</th>
 					<th>Alamat</th>
 					<th>Foto</th>
+					<th>Identitas</th>
 					<th>Email</th>
 					<th>Aksi</th>
 				</tr>
@@ -48,9 +49,15 @@
 					<td data-label="Column 1"><?php echo $baris->nama_pengguna; ?></td>
 					<td data-label="Column 2"><?php echo $baris->notelp_pengguna; ?></td>
 					<td data-label="Column 3"><?php echo $baris->alamat_pengguna; ?></td>
-					<td data-label="Column 4"><?php echo $baris->foto_pengguna; ?></td>
+					<td data-label="Column 4">
+							<a href="<?php echo base_url();?>assets/images/<?php echo $baris->foto_pengguna; ?>" target="_blank"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></a>
+					</td>
+					<td data-label="Column 4">						
+							<a href="<?php echo base_url();?>assets/images/<?php echo $baris->foto_verif_pengguna; ?>" target="_blank"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></a>
+					</td>
 					<td data-label="Column 5"><?php echo $baris->email_pengguna; ?></td>
-					<td data-label="Column 6"><button class="btn btn-danger btn-sm" type="button">HAPUS</button></td>
+					<td data-label="Column 6">
+						<a href="<?php echo base_url();?>admin/hapuspengguna/<?php echo $baris->no_pengguna; ?>"><button class="btn btn-danger btn-sm" type="button">HAPUS</button></a></td>
 				</tr>
 
 				<?php }?>

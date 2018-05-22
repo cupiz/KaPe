@@ -64,15 +64,17 @@
 								echo 'Proses';
 							}
 						?></td>
-					<td data-label="Column 6"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></td>
+					<td data-label="Column 6">
+						<a href="<?php echo base_url();?>assets/images/<?php echo $baris->gambar_pengaduan; ?>" target="_blank"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></a>
+					</td>
 					<td data-label="Column 6"><?php echo substr($baris->pesan_pengaduan, 0,40).'...'; ?></td>
 					<td data-label="Column 8">BELUM ADA TANGGAPAN</td>
 					<td data-label="Column 9">
-						<a href="<?php echo base_url();?>admin/tanggapan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-info btn-sm" type="button">TANGGAPI</button></a><button class="btn btn-danger btn-sm" type="button">HAPUS</button>
+						<a href="<?php echo base_url();?>admin/tanggapan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-info btn-sm" type="button">TANGGAPI</button></a><a href="<?php echo base_url();?>admin/hapuspengaduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-danger btn-sm" type="button">HAPUS</button></a>
 						
 
 
-					</td>
+					<a href="<?php echo base_url();?>home/aduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-default btn-sm" type="button">LINK</button></a></td>
 				
 				</tr>
 				<?php }?>
@@ -122,11 +124,11 @@
 
 					<td data-label="Column 8">SUDAH ADA TANGGAPAN</td>
 					<td data-label="Column 9">
-						<a href="<?php echo base_url();?>admin/tanggapan"></a><button class="btn btn-danger btn-sm" type="button">HAPUS</button>
+						<a href="<?php echo base_url();?>admin/tanggapan"></a><a href="<?php echo base_url();?>admin/hapuspengaduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-danger btn-sm" type="button">HAPUS</button></a>
 						
 
 
-					</td>
+					<a href="<?php echo base_url();?>home/aduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-default btn-sm" type="button">LINK</button></a></td>
 				
 				</tr>
 				<?php }?>

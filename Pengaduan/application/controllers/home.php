@@ -253,7 +253,7 @@ class Home extends CI_Controller {
                'mailpath'  => '/usr/sbin/sendmail',
                'smtp_host' => 'smtp.gmail.com',
                'smtp_user' => 'purbalinggadevinspek@gmail.com',   // Ganti dengan email gmail Anda.
-               'smtp_pass' => 'kosong31',             // Password gmail Anda.
+               'smtp_pass' => 'pbgkosong31',             // Password gmail Anda.
                'smtp_port' => 587,
                'smtp_keepalive' => TRUE,
                'smtp_crypto' => 'tls',

@@ -99,7 +99,20 @@
 
 					</div>
 				</div>
-			
+				
+				<div class="col-md-12">
+
+					<label>Cantumkan nama anda sebagai pelapor ? :</label>
+
+					<select data-placeholder="Pilih" name="statuslaporan" class="chosen-select">
+						<option value="1">Ya</option>
+						<option value="2">Tidak</option>
+
+						
+
+					</select>
+				</div>
+
 			
 			
 			

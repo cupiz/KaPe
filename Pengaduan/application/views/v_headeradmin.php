@@ -37,8 +37,8 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<a href="<?php echo base_url();?>admin"><img src="<?php echo base_url();?>assets/images/logo.png" alt=""></a>
-					<a href="<?php echo base_url();?>admin" class="dashboard-logo"><img src="<?php echo base_url();?>assets/images/logo2.png" alt=""></a>
+					<a href="<?php echo base_url();?>admin/beranda"><img src="<?php echo base_url();?>assets/images/logo.png" alt=""></a>
+					<a href="<?php echo base_url();?>admin/beranda" class="dashboard-logo"><img src="<?php echo base_url();?>assets/images/logo2.png" alt=""></a>
 				</div>
 
 				<!-- Mobile Navigation -->
@@ -63,7 +63,7 @@
 					<div class="user-menu">
 						<div class="user-name"><span><img src="<?php echo base_url();?>assets/images/icon.png" alt=""></span>Admin Aspirasi</div>
 						<ul>
-							<li><a href="<?php echo base_url();?>"><i class="sl sl-icon-power"></i> Keluar</a></li>
+							<li><a href="<?php echo base_url();?>admin/keluar"><i class="sl sl-icon-power"></i> Keluar</a></li>
 						</ul>
 					</div>
 
@@ -95,7 +95,7 @@
 		<div class="dashboard-nav-inner">
 
 			<ul data-submenu-title="Utama">
-				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')==""){echo 'active';}?>"><a href="<?php echo base_url();?>admin"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')=="beranda"){echo 'active';}?>"><a href="<?php echo base_url();?>admin/beranda"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
 				
 			
 			
@@ -108,13 +108,13 @@
 					</ul>	
 				</li>
 				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')=="anggota"){echo 'active';}?>"><a href="<?php echo base_url();?>admin/anggota"><i class="sl sl-icon-user"></i> Anggota</a></li>
-				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')=="opd"){echo 'active';}?>"><a href="<?php echo base_url();?>admin/opd"><i class="fa fa-user-secret"></i> OPD</a></li>				
+				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')=="opd"){echo 'active';}?>"><a href="<?php echo base_url();?>admin/opd"><i class="fa fa-user-secret"></i> OPD</a></li>
+				<li class="<?php if($this->uri->segment('1')=="admin" and $this->uri->segment('2')=="petugas"){echo 'active';}?>"><a href="<?php echo base_url();?>admin/petugas"><i class="im im-icon-User"></i> Petugas</a></li>				
 				
 			</ul>	
 
 			<ul data-submenu-title="Akun">
-				<li><a href="<?php echo base_url();?>admin/profile"><i class="sl sl-icon-user"></i> Profil Admin</a></li>
-				<li><a href="<?php echo base_url();?>"><i class="sl sl-icon-power"></i> Keluar</a></li>
+				<li><a href="<?php echo base_url();?>admin/keluar"><i class="sl sl-icon-power"></i> Keluar</a></li>
 			</ul>
 			
 		</div>

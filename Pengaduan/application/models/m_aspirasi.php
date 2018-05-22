@@ -12,6 +12,13 @@
 		public function tampilopd(){
 		 	return $this->db->query("Select * from opd")->result();
 		}
+		public function tampilopd1($no_opd){
+		 	return $this->db->query("Select * from opd
+		 							where no_opd=$no_opd")->result();
+		}
+		public function tampilpetugas(){
+		 	return $this->db->query("Select * from petugas")->result();
+		}
 		public function tampilproses(){
 		 	return $this->db->query("Select * from pengaduan 
 		 		join opd on opd.no_opd=pengaduan.no_opd
@@ -169,9 +176,46 @@
 			$this->db->where('no_pengguna', $no_pengguna);
 			$this->db->update('pengguna', $data);
 		}
+		public function updateopd($no_opd){
+					
+						
+			$nama_opd=$this->input->post('nama_opd');
+			$alamat_opd=$this->input->post('alamat_opd');
+			$notelp_opd=$this->input->post('notelp_opd');
+			$email_opd=$this->input->post('email_opd');
+
+
+			$data = array (
+				'nama_opd' => $nama_opd,
+				'notelp_opd'  => $notelp_opd,
+				'alamat_opd'=> $alamat_opd,
+				'email_opd' => $email_opd
+			);
+			$this->db->where('no_opd', $no_opd);
+			$this->db->update('opd', $data);
+		}
+		public function delopd($no_opd){
+			$this->db->delete("opd",array("no_opd"=> $no_opd));
+			
+		}
+		public function delpengguna($no_pengguna){
+			$this->db->delete("pengguna",array("no_pengguna"=> $no_pengguna));
+			
+		}public function delpengaduan($no_pengaduan){
+			$this->db->delete("pengaduan",array("no_pengaduan"=> $no_pengaduan));
+			
+		}
 
 		public function simpanajukan($data){
-			$this->db->query("insert into pengaduan values('$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','1')");
+			$this->db->query("insert into pengaduan values('$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','1','$data[7]')");
+
+		}
+		public function simpanopd($data){
+			$this->db->query("insert into opd values('','$data[0]','$data[1]','$data[2]','$data[3]')");
+
+		}
+		public function simpanpetugas($data){
+			$this->db->query("insert into petugas values('','$data[0]','$data[1]','$data[2]')");
 
 		}
 		public function simpantanggap($data){

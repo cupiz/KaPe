@@ -35,13 +35,13 @@
 						<!-- Tanggapan -->
 						<div class="my-profile">
 							<label class="margin-top-0">Nama OPD</label>
-							<input type="text" name="nama" value="">
+							<input type="text" name="nama_opd" value="">
 							<label class="margin-top-0">No HP</label>
-							<input type="text" name="nohp" value="">
+							<input type="text" name="nohp_opd" value="">
 							<label class="margin-top-10">Alamat</label>
-							<input type="text" name="alamat" id="notes" cols="30" rows="2">
+							<input type="text" name="alamat_opd" id="notes" cols="30" rows="2">
 							<label class="margin-top-10">Email</label>
-							<input type="text" name="email" id="notes" cols="30" rows="2">
+							<input type="text" name="email_opd" id="notes" cols="30" rows="2">
 							<button type="submit" class="button margin-top-15">Submit</button>
 						</div>
 						

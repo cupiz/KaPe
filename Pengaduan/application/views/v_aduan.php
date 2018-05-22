@@ -141,8 +141,30 @@
 			<!-- Contact -->
 			<div class="boxed-widget margin-top-35">
 				<div class="hosted-by-title">
-					<h4><span>Di kirim oleh</span> <a><?php echo $baris->nama_pengguna; ?></a></h4>
-					<a class="hosted-by-avatar"><img src="<?php echo base_url();?>assets/images/<?php echo $baris->foto_pengguna; ?>" alt=""></a>
+					<h4><span>Di kirim oleh</span> <a>
+						<?php
+							if ($baris->status_nama=="1") {
+								echo $baris->nama_pengguna;
+							}else{
+								echo 'Anonim';
+							}
+						?>
+
+
+					</a></h4>
+					<a class="hosted-by-avatar">
+
+						<?php
+							if ($baris->status_nama=="1") {
+								echo '<img src="'.base_url().'assets/images/'.$baris->foto_pengguna.'" alt="">';
+							}else{
+								echo '<img src="'.base_url().'assets/images/anoncoba.png" alt="">';
+							}
+						?>	
+						
+
+
+					</a>
 				</div>
 			</div>
 			<!-- Contact / End-->

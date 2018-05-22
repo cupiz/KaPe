@@ -148,7 +148,7 @@
 
 
 								<div class="form-row">
-									<input type="submit" class="button border margin-top-5" name="login" value="Masuk" /><img style="float: right;" src="<?php echo base_url();?>assets/images/uid.png">
+									<input type="submit" class="button border margin-top-5" name="login" value="Masuk" />
 									
 								</div>
 								
@@ -209,7 +209,7 @@
 								</label>
 							</p>
 							
-							<input type="submit" class="button border fw margin-top-10" name="register" value="Daftar" /> <img style="float: right;" src="<?php echo base_url();?>assets/images/uid.png">
+							<input type="submit" class="button border fw margin-top-10" name="register" value="Daftar" />
 	
 							</form>
 						</div>

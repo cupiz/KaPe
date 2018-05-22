@@ -246,7 +246,7 @@
 				                <div class="row">
 									<div class="col-md-12">
 				                	<div class="notification success closeable">
-										<p><span><b>Terima kasih ajukan anda sedang kami proses. Simpan no tiket anda. No tiket :</p>
+										<p><span><b>Terima kasih ajukan anda sedang kami proses.</p>
 										<a class="close"></a>
 									</div>
 									</div>

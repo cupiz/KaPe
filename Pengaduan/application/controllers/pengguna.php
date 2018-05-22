@@ -104,8 +104,9 @@ class pengguna extends CI_Controller {
 			$tanggal_pengaduan = date('Y-m-d');
 			
 			$pesan_pengaduan = $this->input->post('pesan');
+			$statuslaporan = $this->input->post('statuslaporan');
 
-			$data = array($no_pengaduan,$no_opd,$no_pengguna,$tipe_pengaduan,$tanggal_pengaduan,$gambar_pengaduan,$pesan_pengaduan);
+			$data = array($no_pengaduan,$no_opd,$no_pengguna,$tipe_pengaduan,$tanggal_pengaduan,$gambar_pengaduan,$pesan_pengaduan,$statuslaporan);
 			$this->m_aspirasi->simpanajukan($data);
 		
 			$this->session->set_flashdata('daftarberhasil1','yes');		

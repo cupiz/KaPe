@@ -47,7 +47,9 @@
 					<td data-label="Column 2"><?php echo $baris->notelp_opd; ?></td>
 					<td data-label="Column 3"><?php echo $baris->alamat_opd; ?></td>
 					<td data-label="Column 4"><?php echo $baris->email_opd; ?></td>
-					<td data-label="Column 5"><button class="btn btn-success btn-sm" style="margin-right:5px;" type="button">UBAH</button><button class="btn btn-danger btn-sm" type="button">HAPUS</button></td>
+					<td data-label="Column 5">
+						<a href="<?php echo base_url();?>admin/ubahopd/<?php echo $baris->no_opd; ?>"><button class="btn btn-success btn-sm" style="margin-right:5px;" type="button">UBAH</button></a>
+						<a href="<?php echo base_url();?>admin/hapusopd/<?php echo $baris->no_opd; ?>"><button class="btn btn-danger btn-sm" type="button">HAPUS</button></a></td>
 				</tr>
 				<?php }?>
 			

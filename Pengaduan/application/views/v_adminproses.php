@@ -48,10 +48,14 @@
 					<td data-label="Column 2"><?php echo $baris->tipe_pengaduan; ?></td>
 					<td data-label="Column 3"><?php echo $baris->nama_pengguna; ?></td>
 					<td data-label="Column 4"><?php echo $baris->nama_opd; ?></td>
-					<td data-label="Column 5"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></td>
+					<td data-label="Column 5">
+						<a href="<?php echo base_url();?>assets/images/<?php echo $baris->gambar_pengaduan; ?>" target="_blank"><button class="btn btn-primary btn-sm" type="button">LIHAT</button></a>
+					</td>
 					<td data-label="Column 6"><?php echo $baris->pesan_pengaduan; ?></td>
 					<td data-label="Column 7">
-						<a href="<?php echo base_url();?>admin/konfirmasipengaduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-success btn-sm" style="margin-right:5px;" type="button">KONFIRMASI</button></a><button class="btn btn-danger btn-sm" type="button">TOLAK</button></td>
+						<a href="<?php echo base_url();?>admin/konfirmasipengaduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-success btn-sm" style="margin-right:5px;" type="button">KONFIRMASI</button></a>
+						<a href="<?php echo base_url();?>admin/hapuspengaduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-danger btn-sm" type="button">TOLAK</button></a>
+						<a href="<?php echo base_url();?>home/aduan/<?php echo $baris->no_pengaduan; ?>"><button class="btn btn-info btn-sm" type="button">LINK</button></a></td>
 				</tr>
 				<?php }?>
 				
